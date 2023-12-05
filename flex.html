@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 10px;
+
+        }
+        .container{
+          background: black;  
+          /* включили флекс */
+          display: flex; 
+          /* расположение блока row-reverse, row, column,column-reverse */
+          flex-direction: row;
+          /* перенос блока на новую строку, если нет места */
+          /* wrap-reverse-меняем последовательность  снизу вверх */
+          flex-wrap: wrap;
+          /* justify-content: center;-расположение по центру Ox*/
+          /* justify-content: flex-end;-расположение в конце */
+          /* justify-content: flex-start;-расположение в начале  */
+          /* justify-content: space-around;;-равные отступы между блоками  */
+          /* justify-content: space-between;;-равные отступы между блоками  */
+          justify-content: flex-start; 
+          /* расположение по оу-центр-center.  flex-start-начало, конец-flex-end*/
+          /* align-items: stretch; */
+          /* align-content: stretch; */
+                   height: 200px;
+                  }
+
+                  .item5{
+                    /* последоватедьность блоков */
+                    order: 2; 
+                    /* коэффицент для размера по ширине страницы */
+                    flex-grow: 1;
+                  }
+                  .item2{
+                    order: 1; /* последоватедьность блоков */
+                    flex-grow: 1;
+                  }
+                  .item3{
+                    order: 3; /* последоватедьность блоков */
+                    flex-grow: 1;
+                  }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box item5">1</div>
+        <div class="box item2">2</div>
+        <div class="box item2">3</div>
+        <div class="box item3">0</div>
+       
+       
+ 
+    </div>
+    
+    </div>
+
+
+
+</body>
+</html>
